@@ -29,7 +29,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Product Store</h1>
 
       {}
       <button

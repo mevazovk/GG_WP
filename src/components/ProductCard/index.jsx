@@ -10,10 +10,12 @@ export function ProductCard({ data, onAddToCart }) {
         <a href="#">{category}</a>
       </div>
       <h4 className="product-title">{title}</h4>
-      <div className="product-price">{price}$</div>
-      <button className="add-to-cart-btn" onClick={() => onAddToCart(data)}>
-        Add to Cart
-      </button>
+      <div className="product-price">
+        <span>{price}$</span>
+        <button className="add-to-cart-btn" onClick={() => onAddToCart(data)}>
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 }
